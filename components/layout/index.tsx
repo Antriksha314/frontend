@@ -9,8 +9,11 @@ const Layout = ({ children }: { children: any }) => {
         <title>Your Website Title</title>
         <meta name="description" content="Your website description" />
       </Head>
-      <Header />
-      <main className="flex-1 ">
+
+      <main className="flex-1 py-4 relative bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500">
+        <div className="absolute inset-0 bg-black opacity-50">
+          <Header />
+        </div>
         <div className="container mx-auto py-8">{children}</div>
       </main>
       <footer className="bg-gray-900 text-white py-4">

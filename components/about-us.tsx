@@ -2,22 +2,44 @@ import Image from "next/image";
 
 const AboutUs = () => {
   return (
-    <section className="drop-shadow-xl bg-gray-900 container flex justify-between mx-auto">
-      <section className="my-8 px-8">
-        <div className="text-3xl text-white font-extrabold mb-4 min-w-min px-6 ">Codext one of the best system in SAAS</div>
-        <p className="text-lg text-white px-6 mb-4 break-normal">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ut
-          tortor auctor, tempor mauris in, scelerisque quam. Nunc id nunc ut
-          nulla porttitor blandit a sed dolor.
-        </p>
-        <button className="bg-white rounded-md mt-3 px-4 py-3">Try live demo</button>
-      </section>
-      <section className="my-8">
-        <figure className="my-4 py-4 pr-4">
-          <Image src="/first.jpg" alt="Office" width={1200} height={800} />
-        </figure>
-      </section>
-    </section>
+    <div className="relative flex flex-col items-center justify-center h-screen">
+      <div
+        id="about-us"
+        className="container rounded-full  mx-auto py-12 flex flex-wrap items-center bg-white shadow-outline"
+      >
+        <div className="w-full md:w-1/2 md:pr-8 mb-8 md:mb-0 px-16">
+          <Image
+            src="/images/about-us.jpg"
+            alt="About Us"
+            width={600}
+            height={600}
+            className=" rounded-lg shadow-lg"
+          />
+        </div>
+        <div className="w-full md:w-1/2 px-16">
+          <h1 className="text-4xl font-bold text-gray-900 leading-tight mb-4">
+            About Us
+          </h1>
+          <p className="text-lg text-gray-800 leading-relaxed mb-8">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
+            convallis lorem nec nulla tempus, sit amet convallis ipsum
+            ultricies. Donec gravida enim et arcu malesuada, ut lacinia eros
+            pulvinar. Sed auctor ex at nibh tristique vestibulum. Vivamus
+            dignissim nisl vel nunc pharetra maximus. Nulla sit amet risus
+            feugiat, rhoncus libero vel, varius arcu. Sed tristique metus
+            mauris, a vehicula nisl iaculis vitae. Ut auctor nisi vel sapien
+            venenatis, eget posuere nisi vulputate. Nam quis eros ac risus
+            aliquet facilisis.
+          </p>
+          <p className="text-lg text-gray-800 leading-relaxed mb-8">
+            Morbi sodales eros at velit posuere pharetra. Proin commodo
+            sollicitudin tellus vel tincidunt. Duis fermentum, tortor vel
+            scelerisque pharetra, urna velit lacinia lorem, nec faucibus neque
+            lorem vitae justo.
+          </p>
+        </div>
+      </div>
+    </div>
   );
 };
 
